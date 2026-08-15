@@ -13,8 +13,8 @@
     --color-primary: #0F172A;
     --color-on-primary: #FFFFFF;
     --color-secondary: #334155;
-    --color-accent: #0369A1;
-    --color-accent-hover: #075985;
+    --color-accent: #B71A1D;
+    --color-accent-hover: #8F1417;
     --color-on-accent: #FFFFFF;
     --color-background: #F8FAFC;
     --color-foreground: #020617;
@@ -22,7 +22,7 @@
     --color-muted-foreground: #475569;
     --color-border: #E2E8F0;
     --color-card: #FFFFFF;
-    --color-ring: #0369A1;
+    --color-ring: #B71A1D;
     --space-2: 8px;
     --space-3: 16px;
     --space-4: 24px;
@@ -83,22 +83,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: var(--color-primary);
     white-space: nowrap;
   }
-  .logo .mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .logo .mark svg { width: 20px; height: 20px; stroke: white; }
+  .logo-img { height: 30px; width: auto; }
+  .logo-img-full { height: 52px; }
 
   nav.main-nav {
     display: flex;
@@ -213,7 +201,7 @@
   .hero-visual {
     position: relative;
     border-radius: 24px;
-    background: linear-gradient(160deg, var(--color-primary), #1E3A5F 60%, var(--color-accent));
+    background: linear-gradient(160deg, var(--color-primary), #4A1620 60%, var(--color-accent));
     aspect-ratio: 4/5;
     box-shadow: var(--shadow-lift);
     overflow: hidden;
@@ -311,7 +299,7 @@
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 14px;
   }
-  .why-item .icon-wrap svg { width: 22px; height: 22px; stroke: #7DD3FC; }
+  .why-item .icon-wrap svg { width: 22px; height: 22px; stroke: #F2A2A5; }
   .why-item h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
   .why-item p { font-size: 0.92rem; color: #CBD5E1; }
   .why-section .section-head h2 { color: white; }
@@ -442,10 +430,7 @@
 <header>
   <div class="container header-inner">
     <a href="#top" class="logo">
-      <span class="mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2.5 0-4 1.8-4 4 0 1.5.5 2.3 1 3.2.6 1 1 1.8 1 3.3 0 2-.5 3.5-1 5-.3 1-.5 2 .3 2.5.8.5 1.7-.2 2-1.5.3-1.3.4-2 .7-2s.4.7.7 2c.3 1.3 1.2 2 2 1.5.8-.5.6-1.5.3-2.5-.5-1.5-1-3-1-5 0-1.5.4-2.3 1-3.3.5-.9 1-1.7 1-3.2 0-2.2-1.5-4-4-4z"/></svg>
-      </span>
-      Bäuchle Dentaltechnik
+      <img src="kuvat/footer-logo.png" alt="Bäuchle Dentaltechnik" class="logo-img">
     </a>
     <nav class="main-nav">
       <a class="nav-link" href="#leistungen">Leistungen</a>
@@ -705,7 +690,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a href="#top" class="logo"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2.5 0-4 1.8-4 4 0 1.5.5 2.3 1 3.2.6 1 1 1.8 1 3.3 0 2-.5 3.5-1 5-.3 1-.5 2 .3 2.5.8.5 1.7-.2 2-1.5.3-1.3.4-2 .7-2s.4.7.7 2c.3 1.3 1.2 2 2 1.5.8-.5.6-1.5.3-2.5-.5-1.5-1-3-1-5 0-1.5.4-2.3 1-3.3.5-.9 1-1.7 1-3.2 0-2.2-1.5-4-4-4z"/></svg></span>Bäuchle Dentaltechnik</a>
+        <a href="#top" class="logo"><img src="kuvat/logo.png" alt="Bäuchle Dentaltechnik — Ästhetik, Präzision, Innovation" class="logo-img logo-img-full"></a>
         <p>Zahntechnischer Meisterbetrieb mit über 25 Jahren Erfahrung — CAD/CAM-Zahnersatz aus Göppingen-Holzheim und Geislingen.</p>
       </div>
       <div>
